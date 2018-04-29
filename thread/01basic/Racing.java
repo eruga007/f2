@@ -34,7 +34,7 @@ class Racing implements Runnable{
 
 	static class Counter{
 		private int value = 0;
-		public /*synchronized*/ void count(){			
+		public synchronized void count(){			
 			int v = value;			
 			value = v + 1;
 		}
